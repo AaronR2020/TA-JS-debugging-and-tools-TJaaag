@@ -33,7 +33,7 @@ function test(msg,cb){
         console.log(`${msg} seems to work fine` );
     }
     catch(error){
-console.error(error);
+//console.error(error);
 console.log(`${msg}`,error)
     }
 }
@@ -101,9 +101,13 @@ function testMulType(){
 test("\n\nadding two numbers\n",testAddCalc);
 test("\n\nadding only one argument to add\n",testAddMissign);
 test("\n\nCheck if values inputed are numbers or not \n",testAddType)
+test("\n\nadding only one argument to add\n",testAddMissign);
+test("\n\nCheck if values inputed are numbers or not \n",testAddType)
 
 //test case multiply value
 test("\n\nmultiplying two numbers\n",testMulCalc);
+test("\n\nadding only one argument to multiply\n",testMulMissign)
+test("\n\nCheck if values inputed are numbers or not \n",testMulType)
 test("\n\nadding only one argument to multiply\n",testMulMissign)
 test("\n\nCheck if values inputed are numbers or not \n",testMulType)
 
